@@ -39,9 +39,15 @@ function randomNumber(no,max){
     //console.log(5);
     const digits = no*2;
     var maxNumBer = 10 ;
-    for(var i = 0; (i+3) < digits; i++){
-      maxNumBer = maxNumBer*10;
-      
+    if(no<=3){
+      for(var i = 0; (i+3) <= digits; i++){
+        maxNumBer = maxNumBer*10;   
+      } 
+    }
+    if(no>3){
+      for(var i = 0; (i+3) < digits; i++){
+        maxNumBer = maxNumBer*10;  
+      }
     }
     var seed = seedFixer(digits,maxNumBer);
     //console.log(maxNumBer);
@@ -73,4 +79,4 @@ function randomNumber(no,max){
 
 randomNumber();
 randomNumber(1,100000);
-randomNumber(3);
+randomNumber(5);
