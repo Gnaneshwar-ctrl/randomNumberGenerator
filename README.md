@@ -1,2 +1,2 @@
 # randomNumberGenerator
-fn to generate random numbers
+js fn to generate random numbers 
