@@ -2,7 +2,7 @@ function randomNumber(no,max){
   
   //maxNum = Number.MAX_SAFE_INTEGER;
   function seedFixer(digits,max){
-    maxNum = 1000000000;
+    maxNum = 10000000000;
     for(var i = maxNum;i>max; i = i - 3){
       if(i<max){
         return i;
@@ -37,7 +37,7 @@ function randomNumber(no,max){
   //single no case
   if(no && !max){
     //console.log(5);
-    const digits = no;
+    const digits = no*2;
     var maxNumBer = 10 ;
     for(var i = 0; (i+3) < digits; i++){
       maxNumBer = maxNumBer*10;
@@ -73,4 +73,4 @@ function randomNumber(no,max){
 
 randomNumber();
 randomNumber(1,100000);
-randomNumber(10);
+randomNumber(3);
